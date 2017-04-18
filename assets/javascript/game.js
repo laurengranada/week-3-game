@@ -15,7 +15,8 @@ var lettersGuessed = [];
 var energyAudio = new Audio('assets/audio/energy.mp3');
 var controllaAudio = new Audio('assets/audio/controlla.mp3');
 var hotlineAudio = new Audio('assets/audio/hotline.mp3');
-
+var childsplayAudio = new Audio('assets/audio/childsplay.mp3');
+var onedanceAudio = new Audio('assets/audio/onedance.mp3');
 
 
 // setting variables for wins, losses
@@ -30,6 +31,8 @@ function startGame() {
 	controllaAudio.pause();
 	energyAudio.pause();
 	hotlineAudio.pause();
+	onedanceAudio.pause();
+	childsplayAudio.pause();
 
 	// resets chance counter
 	chances = 14;
@@ -53,6 +56,12 @@ function startGame() {
 		}
 		else if(word === "hotline bling"){
 			hotlineAudio.play();
+		}
+		else if(word === "childs play"){
+			childsplayAudio.play();
+		}
+		else if(word === "one dance"){
+			onedanceAudio.play();
 		}
 	};
 
