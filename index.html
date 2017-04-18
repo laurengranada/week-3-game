@@ -2,26 +2,61 @@
 <html>
 <head>	
 	<title>Drake Hangman</title>
+	<!-- bootstrap link -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- google fonts link -->
+	<link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+	<!-- my stylesheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </head>
 <body>
 
+<!-- inputing video as background -->
+<div class="fullscreen-bg">
+	<video autoplay="autoplay" loop="loop" class="fullscreen-bg_video">
+		<source src="assets/images/dance.mp4" type="video/mp4">
+	</video>
+</div>
 
-	<h1>Hangman: Drake Style</h1>
-		<br>
-	<div id="game">
-		<h3>Press any key to start!</h3>
+<!-- container for header of page -->
+ <div class="container">
+ 	<h1>Hangman: Drake Style</h1>
+ 	<h4>Guess which Drake song is playing, Press any key to start!</h4>
+ </div>
 
-	
-			<p id="myWins">Wins : </p>
-
-			<p id="myChances">Chances Left: </p>
-			<p id="myGuesses">Letters Guessed: </p>
+<!-- container for wins/losses -->
+<div class="row">
+	<div class="col-sm-3 c1">
+		<div class="container">
+			<p>Wins: <span style="color: green" id="wins">0</span></p>
+			<p>Losses: <span style="color: red" id="losses">0</span></p>
+		</div>
 	</div>
+</div>
 
+<!-- container for letters/chances -->
+<div class="row">
+	<div class="col-sm-3 c2">
+		<div class="container">
+			<p>Chances Left: <span id="chances"></span></p>
+			<p>Letters Guessed: <span id="lettersGuessed"></span></p>
+		</div>
+	</div>
+</div>
 
+<!-- container for hidden word -->
+<div class="row">
+	<div class="bottom">
+		<div class="col-sm-9"> 
+			<h3 id="spaces"></h3>
+		</div>
+	</div>
+</div>
+
+<!-- my js file -->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 </html>
