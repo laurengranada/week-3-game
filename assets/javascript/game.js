@@ -1,6 +1,6 @@
 
 // array of words
-var words = ["hotline bling", "controlla", "one dance", "energy"];
+var words = ["hotline bling", "controlla", "one dance", "energy", "childsplay"];
 // word chosen from array
 var word = "";
 // represents individual letters in word
