@@ -59,7 +59,7 @@ function startGame() {
 		else if(word === "childs play"){
 			childsAudio.play();
 		}
-		else if(word === "childs play"){
+		else if(word === "one dance"){
 			oneAudio.play();
 		}
 	};
