@@ -48,6 +48,7 @@ h3{
 p{
 	color: white;
 	font-family: 'Open Sans', sans-serif;
+	text-shadow: 1px 1px 4px #000000;
 }
 
 .jumbotron{
