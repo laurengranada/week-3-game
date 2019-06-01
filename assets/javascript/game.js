@@ -18,6 +18,7 @@ var hotlineAudio = new Audio('assets/audio/hotline.mp3');
 var childsplayAudio = new Audio('assets/audio/childsplay.mp3');
 var onedanceAudio = new Audio('assets/audio/onedance.mp3');
 
+
 // setting variables for wins, losses
 var wins = 0;
 var losses = 0;
@@ -26,6 +27,7 @@ var chances = 14;
 
 
 function startGame() {
+
 	// stop track playing
 	controllaAudio.pause();
 	energyAudio.pause();
@@ -35,7 +37,7 @@ function startGame() {
 
 	// resets chance counter
 	chances = 14;
-	// resets letters guessed 
+	// resets letters guessed
 	lettersGuessed = [];
 	// resets letters/spaces remaining
 	lettersAndSpaces = [];
@@ -44,8 +46,8 @@ function startGame() {
 
 	// call on a random word from the words array
 	word = words[Math.floor(Math.random()*words.length)];
-		console.log(word);
-	// if word is matching song, play designated song 
+		// console.log(word);
+	// if word is matching song, play designated song
 	for(var i = 0; i < word.length; i++){
 		if(word === "energy"){
 			energyAudio.play();
@@ -79,7 +81,7 @@ function startGame() {
 		hiddenSpaces.push(" ");
 	}
 
-	console.log(lettersAndSpaces);
+	// console.log(lettersAndSpaces);
 
 	// update HTML to show new counts
 	document.getElementById("chances").innerHTML = chances;
@@ -138,9 +140,22 @@ function roundComplete() {
 	}
 };
 
+function init () {
+	var elem = document.getElementById("start").remove();
+	if (elem !== undefined) {
+		elem.remove();
+	};
+	var container = "<h3 id='spaces'></h3>";
+	document.getElementById("content").innerHTML = container;
+	// document.getElementById("content").appendChild(container);
+	startGame();
+}
 
-startGame();
+// startGame();
 
+// window.onload = function() {
+// 	var context = new AudioContext();
+//   }
 
 document.onkeyup = function(){
 	var userguess = String.fromCharCode(event.keyCode).toLowerCase();
@@ -149,3 +164,5 @@ document.onkeyup = function(){
 	roundComplete();
 };
 
+// click event for the start button
+// document.getElementById("start").onclick = startGame();

@@ -50,6 +50,19 @@ p{
 	font-family: 'Open Sans', sans-serif;
 }
 
+button{
+	display: block;
+	width: 400px;
+	height: 100px;
+	margin: 10px auto 0 auto;
+	font-size: 45px;
+	font-family: 'Shrikhand', cursive;
+	text-shadow: 2px 2px 4px #000000;
+	color: white;
+	background: none;
+	border: none;
+}
+
 .jumbotron{
 	margin: 20px;
 	opacity: 40%;
@@ -111,4 +124,19 @@ p{
     width: auto;
     height: 100%;
   }
+}
+
+@media only screen and (max-width: 600px) {
+	.c1{
+		margin-top: 10rem;
+		margin-left: 44%;
+	}
+	.c2{
+		margin-top: 12rem;
+		margin-left: 24%;
+		width: 30rem;
+	}
+	h3{
+		font-size: 30px;
+	}
 }
