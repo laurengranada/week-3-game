@@ -115,6 +115,7 @@ button{
 	position: absolute;
 	display: none;
 	visibility:hidden;
+	opacity: 0;
 }
 
 @media (min-aspect-ratio: 16/9) {
