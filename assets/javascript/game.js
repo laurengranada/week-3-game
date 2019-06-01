@@ -146,8 +146,11 @@ function init () {
 		elem.remove();
 	};
 	var container = "<h3 id='spaces'></h3>";
+	var mobileKeyboard = "<input type='hidden' id='dummy'>";
+
 	document.getElementById("content").innerHTML = container;
-	// document.getElementById("content").appendChild(container);
+	document.getElementById("keyboard").innerHTML = mobileKeyboard;
+	document.getElementById("dummy").focus();
 	startGame();
 }
 

@@ -111,6 +111,11 @@ button{
 	bottom: 5%;
 }
 
+.dummy{
+	position: absolute;
+	display: none;
+	visibility:hidden;
+}
 
 @media (min-aspect-ratio: 16/9) {
   .fullscreen-bg__video {
