@@ -121,8 +121,8 @@ button:focus { outline: none; }
 	/* display: none; */
 	/* visibility:hidden; */
 	position: absolute;
-	overflow: hidden;
-	display: none;
+	/* overflow: hidden;
+	display: none; */
 	right: -500px;
 	bottom: -500px;
 	/* opacity: 0 !important; */
