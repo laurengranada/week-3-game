@@ -123,8 +123,8 @@ button:focus { outline: none; }
 	/* position: absolute; */
 	/* overflow: hidden; */
 	/* display: none; */
-	right: -500px;
-	bottom: -500px;
+	/* right: -500px; */
+	/* bottom: -500px; */
 	/* opacity: 0 !important; */
 }
 
