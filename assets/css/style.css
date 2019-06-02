@@ -118,7 +118,7 @@ button:focus { outline: none; }
 }
 #dummy{
 	position: absolute;
-	display: none;
+	/* display: none; */
 	visibility:hidden;
 	opacity: 0 !important;
 }
