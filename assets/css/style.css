@@ -143,7 +143,7 @@ button:focus { outline: none; }
   }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 650px) {
+/* @media only screen and (min-width: 300px) and (max-width: 650px) {
 	.score{
 		top: 15%;
 		left: 35%;
@@ -175,4 +175,4 @@ button:focus { outline: none; }
 	button{
 		width: 200px;
 	}
-}
+} */
