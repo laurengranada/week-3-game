@@ -112,11 +112,11 @@ button:focus { outline: none; }
 	bottom: 5%;
 }
 
-.keyboard{
+#keyboard{
 	width: 0;
 	overflow: hidden;
 }
-.dummy{
+#dummy{
 	/* position: absolute;
 	display: none;
 	visibility:hidden;
