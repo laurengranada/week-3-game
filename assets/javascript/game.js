@@ -150,11 +150,21 @@ function init () {
 
 	document.getElementById("content").innerHTML = container;
 	document.getElementById("keyboard").innerHTML = mobileKeyboard;
+	function initKeyboard() {
+		return new Promise((resolve) => {
+			document.getElementById("keyboard").innerHTML = mobileKeyboard;
+			resolve();
+		});
+	}
+	initKeyboard().then(() => {
+		document.getElementById("keyboardInput").focus();
+			document.getElementById("keyboardInput").click();
+	})
 	// setTimeout (function () {
 	// 	document.getElementById("keyboardInput").focus();
 	// }, 1);
-	document.getElementById("keyboardInput").focus();
-	document.getElementById("keyboardInput").click();
+	// document.getElementById("keyboardInput").focus();
+	// document.getElementById("keyboardInput").click();
 
 
 	startGame();
