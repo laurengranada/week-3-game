@@ -112,15 +112,20 @@ button:focus { outline: none; }
 	bottom: 5%;
 }
 
-/* #keyboard{
-	width: 0;
-	overflow: hidden;
-} */
+#keyboard{
+	/* width: 0; */
+	/* overflow: hidden; */
+}
 #dummy{
 	/* position: absolute; */
 	/* display: none; */
 	/* visibility:hidden; */
-	opacity: 0 !important;
+	position: absolute;
+	overflow: hidden;
+	display: none;
+	right: -500px;
+	bottom: -500px;
+	/* opacity: 0 !important; */
 }
 
 @media (min-aspect-ratio: 16/9) {
