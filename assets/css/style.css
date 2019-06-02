@@ -120,8 +120,7 @@ button:focus { outline: none; }
 	position: absolute;
 	display: none;
 	visibility:hidden;
-	opacity: 0;
-	filter:alpha(opacity=0);
+	opacity: 0 !important;
 }
 
 @media (min-aspect-ratio: 16/9) {
