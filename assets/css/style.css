@@ -114,7 +114,7 @@ button:focus { outline: none; }
 
 #keyboard{
 	/* width: 0; */
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 #keyboardInput{
 	/* position: absolute; */
