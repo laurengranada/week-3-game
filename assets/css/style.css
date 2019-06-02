@@ -120,7 +120,7 @@ button:focus { outline: none; }
 	/* position: absolute; */
 	/* display: none; */
 	/* visibility:hidden; */
-	position: absolute;
+	/* position: absolute; */
 	/* overflow: hidden; */
 	/* display: none; */
 	right: -500px;
