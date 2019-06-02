@@ -76,16 +76,20 @@ function startGame() {
 	spaces = lettersInWord.length;
 
 	for(var i = 0; i < spaces; i++){
-		lettersAndSpaces.push("_");
-	} if(i === " "){
-		hiddenSpaces.push(" ");
+		console.log(lettersInWord[i]);
+		if (lettersInWord[i] === " ") {
+			console.log('yes');
+			lettersAndSpaces.push("_");
+		} else {
+			lettersAndSpaces.push("_");
+		}
 	}
 
 	// console.log(lettersAndSpaces);
 
 	// update HTML to show new counts
 	document.getElementById("chances").innerHTML = chances;
-	document.getElementById("spaces").innerHTML = hiddenSpaces.join(" ");
+	// document.getElementById("spaces").innerHTML = hiddenSpaces.join(" ");
 	document.getElementById("spaces").innerHTML = lettersAndSpaces.join(" ");
 	document.getElementById("lettersGuessed").innerHTML = lettersGuessed.join(" ");
 };
@@ -160,6 +164,7 @@ function init () {
 		document.getElementById("keyboardInput").focus();
 		document.getElementById("keyboardInput").click();
 		document.getElementById("keyboardInput").focus();
+
 	});
 	// setTimeout (function () {
 	// 	document.getElementById("keyboardInput").focus();
