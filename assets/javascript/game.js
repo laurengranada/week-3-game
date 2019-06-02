@@ -150,7 +150,8 @@ function init () {
 
 	document.getElementById("content").innerHTML = container;
 	document.getElementById("keyboard").innerHTML = mobileKeyboard;
-	document.getElementById("dummy").focus();
+	// document.getElementById("dummy").focus();
+	document.getElementById("spaces").focus();
 	startGame();
 }
 
