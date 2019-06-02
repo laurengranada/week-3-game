@@ -150,6 +150,7 @@ function init () {
 
 	document.getElementById("content").innerHTML = container;
 	document.getElementById("keyboard").innerHTML = mobileKeyboard;
+	event.preventDefault();
 	setTimeout (function () {
 		document.getElementById("keyboardInput").focus();
 	}, 1);
