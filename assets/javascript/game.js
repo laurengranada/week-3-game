@@ -151,14 +151,12 @@ function init () {
 	document.getElementById("content").innerHTML = container;
 	document.getElementById("keyboard").innerHTML = mobileKeyboard;
 	document.getElementById("dummy").focus();
+	document.getElementById("keyboard").focus();
+
 	startGame();
 }
 
 // startGame();
-
-// window.onload = function() {
-// 	var context = new AudioContext();
-//   }
 
 document.onkeyup = function(){
 	var userguess = String.fromCharCode(event.keyCode).toLowerCase();
