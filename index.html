@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Drake Hangman</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- bootstrap link -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- google fonts link -->
@@ -19,25 +20,25 @@
 		</video>
 	</div>
 	<!-- container for header of page -->
-	<div class="container">
-		<h1>Hangman: Drake Style</h1>
-		<h4>Guess which Drake song is playing, Press any key to start!</h4>
+	<div class="container top">
+		<h1 class="t-ttl">Hangman: Drake Style</h1>
+		<h4 class="t-subttl">Guess which Drake song is playing, Press any key to start!</h4>
 	</div>
 	<!-- container for wins/losses -->
 	<div class="row">
-		<div class="col-sm-3 c1">
+		<div class="col-sm-3 score">
 			<div class="container">
-				<p>Wins: <span style="color: green" id="wins">0</span></p>
-				<p>Losses: <span style="color: red" id="losses">0</span></p>
+				<p class="s-wins">Wins: <span style="color: green" id="wins">0</span></p>
+				<p class="s-losses">Losses: <span style="color: red" id="losses">0</span></p>
 			</div>
 		</div>
 	</div>
 	<!-- container for letters/chances -->
 	<div class="row">
-		<div class="col-sm-3 c2">
+		<div class="col-sm-3 guesses">
 			<div class="container">
-				<p>Chances Left: <span id="chances"></span></p>
-				<p>Letters Guessed: <span id="lettersGuessed"></span></p>
+				<p class="g-chances">Chances Left: <span id="chances"></span></p>
+				<p class="g-letters">Letters Guessed: <span id="lettersGuessed"></span></p>
 			</div>
 		</div>
 	</div>
