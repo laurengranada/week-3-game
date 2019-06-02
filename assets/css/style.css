@@ -116,13 +116,13 @@ button:focus { outline: none; }
 	/* width: 0; */
 	/* overflow: hidden; */
 }
-#dummy{
+#keyboardInput{
 	/* position: absolute; */
 	/* display: none; */
 	/* visibility:hidden; */
 	position: absolute;
-	/* overflow: hidden;
-	display: none; */
+	overflow: hidden;
+	display: none;
 	right: -500px;
 	bottom: -500px;
 	/* opacity: 0 !important; */
