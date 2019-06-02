@@ -119,10 +119,10 @@ button:focus { outline: none; }
 #keyboardInput{
 	/* position: absolute; */
 	/* display: none; */
-	visibility:hidden;
+	/* visibility:hidden; */
 	position: absolute;
 	overflow: hidden;
-	/* display: none; */
+	display: none;
 	right: -500px;
 	bottom: -500px;
 	/* opacity: 0 !important; */
