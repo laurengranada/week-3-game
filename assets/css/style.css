@@ -123,8 +123,8 @@ button:focus { outline: none; }
 	position: absolute;
 	overflow: hidden;
 	/* display: none; */
-	/* right: -500px;
-	bottom: -500px; */
+	top: -500px;
+	left: -500px;
 	/* opacity: 0 !important; */
 	/* font-size: 16px; */
 }
@@ -145,24 +145,15 @@ button:focus { outline: none; }
 
 @media only screen and (max-width: 600px) {
 	.c1{
-		top: 0%;
-		/* margin-top: 10rem; */
+		margin-top: 10rem;
 		margin-left: 44%;
 	}
 	.c2{
-		top: 15%;
-
-		/* margin-top: 12rem; */
+		margin-top: 12rem;
 		margin-left: 24%;
 		width: 30rem;
 	}
 	h3{
 		font-size: 30px;
-	}
-	.header{
-		display: none;
-	}
-	.col-sm-9{
-		bottom: 44.2%;
 	}
 }
