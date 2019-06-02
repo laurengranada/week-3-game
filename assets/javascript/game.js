@@ -151,10 +151,10 @@ function init () {
 	document.getElementById("content").innerHTML = container;
 	document.getElementById("keyboard").innerHTML = mobileKeyboard;
 	event.preventDefault();
-	setTimeout (function () {
-		document.getElementById("keyboardInput").focus();
-	}, 1);
-	// document.getElementById("keyboardInput").focus();
+	// setTimeout (function () {
+	// 	document.getElementById("keyboardInput").focus();
+	// }, 1);
+	document.getElementById("keyboardInput").focus();
 
 	startGame();
 }
