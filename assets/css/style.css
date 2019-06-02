@@ -117,12 +117,10 @@ button:focus { outline: none; }
 	overflow: hidden;
 }
 #dummy{
-	/* position: absolute;
+	position: absolute;
 	display: none;
 	visibility:hidden;
 	opacity: 0;
-	z-index: -1; */
-	opacity:0;
 	filter:alpha(opacity=0);
 }
 
