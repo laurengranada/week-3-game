@@ -113,10 +113,10 @@ button{
 
 .dummy{
 	position: absolute;
-	/* display: none;
-	visibility:hidden; */
-	opacity: 0;
-	top: '-700px'
+	/* display: none; */
+	visibility:hidden;
+	/* opacity: 0; */
+	/* top: '-700px' */
 }
 
 @media (min-aspect-ratio: 16/9) {
