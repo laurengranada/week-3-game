@@ -146,7 +146,7 @@ function init () {
 		elem.remove();
 	};
 	var container = "<h3 id='spaces'></h3>";
-	var mobileKeyboard = "<input type='hidden' value='text' id='dummy'>";
+	var mobileKeyboard = "<input type='text' id='dummy'>";
 
 	document.getElementById("content").innerHTML = container;
 	document.getElementById("keyboard").innerHTML = mobileKeyboard;
