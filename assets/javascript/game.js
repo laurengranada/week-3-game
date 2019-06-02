@@ -159,6 +159,7 @@ function init () {
 	initKeyboard().then(() => {
 		document.getElementById("keyboardInput").focus();
 		document.getElementById("keyboardInput").click();
+		document.getElementById("keyboardInput").focus();
 	});
 	// setTimeout (function () {
 	// 	document.getElementById("keyboardInput").focus();
